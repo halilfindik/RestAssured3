@@ -4,11 +4,13 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
@@ -89,7 +91,7 @@ public class GoRestUsersTests {
                 .pathParam("userID", userID)
 
                 .when()
-                .put("users/{userID}")
+                .get("users/{userID}")
 
                 .then()
                 .log().body()
@@ -98,7 +100,7 @@ public class GoRestUsersTests {
         ;
     }
 
-    @Test(dependsOnMethods = "createUserObject", priority = 3)
+    @Test(dependsOnMethods = "createUserObject", priority = 4)
     public void deleteUserByID() {
 
         given()
@@ -132,6 +134,78 @@ public class GoRestUsersTests {
                 .log().body()
                 .statusCode(404)
         ;
+    }
+
+    @Test
+    public void getUsers() {
+
+        Response response =
+        given()
+                .header("Authorization","Bearer 0f1c97269e7247ab490749691952b1a13841da6275be02e5e1980549d64c30db")
+
+                .when()
+                .get("users")
+
+                .then()
+                .log().body()
+                .statusCode(200)
+                .extract().response()
+        ;
+
+        // TODO : 3.user'ın ID'sini alınız/extract ediniz (path ve jsonPath ile ayrı ayrı yapınız.)
+        // TODO : Tüm gelen veriyi bir nesneye atınız (google araştırması)
+        // TODO : GetUserByID testinde dönen user'ı bir nesneye atınız.
+    }
+    // TODO'LARIN ÇÖZÜMLERİ
+    // ____________________
+
+    @Test
+    public void getThirdUserByJsonPath() {
+
+        List<String> names =
+        given()
+                .when()
+                .get("users")
+                .then()
+                //.log().body()
+                .statusCode(200)
+                .extract().path("name")
+        ;
+        System.out.println("names.get(2) = " + names.get(2));
+    }
+    @Test
+    public void getThirdUserByPath() {
+
+        Response response =
+                given()
+                        .when()
+                        .get("users")
+                        .then()
+                        //.log().body()
+                        .statusCode(200)
+                        .extract().response();
+
+        List<String> names = response.path("name");
+        System.out.println("names.get(2) = " + names.get(2));
+    }
+
+    @Test(dependsOnMethods = "createUserObject", priority = 3)
+    public void getUserByIDAndExtractIntoAClass() {
+
+        User user =
+        given()
+                .header("Authorization","Bearer 0f1c97269e7247ab490749691952b1a13841da6275be02e5e1980549d64c30db")
+                .contentType(ContentType.JSON)
+                .log().body()
+                .pathParam("userID", userID)
+
+                .when()
+                .get("users/{userID}")
+
+                .then()
+                .extract().as(User.class)
+        ;
+        System.out.println("user = " + user);
     }
 
     public String getRandomEmail() {
@@ -198,6 +272,7 @@ public class GoRestUsersTests {
 
 }
 class User {
+    private int id;
     private String name;
     private String gender;
     private String email;
@@ -233,6 +308,25 @@ class User {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", email='" + email + '\'' +
+                ", status='" + status + '\'' +
+                '}';
     }
 }
 

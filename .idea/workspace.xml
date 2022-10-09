@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="04.10.2022 Restassured - GoRest Create-Update-getUserByID">
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="04.10.2022 Restassured - GoRest Delete-DeleteNegative">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" afterDir="false" />
     </list>
@@ -39,8 +39,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.GoRestUsersTests">
-    <configuration name="GoRestUsersTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GoRestUsersTests.getUserByIDAndExtractIntoAClass">
+    <configuration name="GoRestUsersTests.getThirdUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -50,24 +50,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="GoRest" />
       <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoRestUsersTests.createUserObject" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GoRest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GoRest" />
-      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
-      <option name="METHOD_NAME" value="createUserObject" />
+      <option name="METHOD_NAME" value="getThirdUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -75,7 +58,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoRestUsersTests.deleteUserByID" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTests.getThirdUserByJsonPath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -85,7 +68,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="GoRest" />
       <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
-      <option name="METHOD_NAME" value="deleteUserByID" />
+      <option name="METHOD_NAME" value="getThirdUserByJsonPath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -93,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoRestUsersTests.deleteUserByIDNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTests.getThirdUserPath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +86,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="GoRest" />
       <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
-      <option name="METHOD_NAME" value="deleteUserByIDNegative" />
+      <option name="METHOD_NAME" value="getThirdUserPath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -111,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoRestUsersTests.updateUserObject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTests.getUserByIDAndExtractIntoAClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +104,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="GoRest" />
       <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
-      <option name="METHOD_NAME" value="updateUserObject" />
+      <option name="METHOD_NAME" value="getUserByIDAndExtractIntoAClass" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZippoTest.checkStateInResponseBodyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ZippoTest" />
+      <option name="METHOD_NAME" value="checkStateInResponseBodyTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoRestUsersTests" />
-        <item itemvalue="TestNG.GoRestUsersTests.deleteUserByIDNegative" />
-        <item itemvalue="TestNG.GoRestUsersTests.deleteUserByID" />
-        <item itemvalue="TestNG.GoRestUsersTests.updateUserObject" />
-        <item itemvalue="TestNG.GoRestUsersTests.createUserObject" />
+        <item itemvalue="TestNG.GoRestUsersTests.getUserByIDAndExtractIntoAClass" />
+        <item itemvalue="TestNG.GoRestUsersTests.getThirdUserByJsonPath" />
+        <item itemvalue="TestNG.GoRestUsersTests.getThirdUserPath" />
+        <item itemvalue="TestNG.GoRestUsersTests.getThirdUser" />
+        <item itemvalue="TestNG.ZippoTest.checkStateInResponseBodyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665328683912</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="04.10.2022 Restassured - GoRest Delete-DeleteNegative">
+      <created>1665330839233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665330839233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı" />
     <MESSAGE value="04.10.2022 Restassured - GoRest Create-Update-getUserByID" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.10.2022 Restassured - GoRest Create-Update-getUserByID" />
+    <MESSAGE value="04.10.2022 Restassured - GoRest Delete-DeleteNegative" />
+    <option name="LAST_COMMIT_MESSAGE" value="04.10.2022 Restassured - GoRest Delete-DeleteNegative" />
   </component>
 </project>
