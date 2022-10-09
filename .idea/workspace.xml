@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="04.10.2022 Restassured Gün Sonu">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Campus/Model/Country.java" afterDir="false" />
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="05.10.2022 RestAssured Gün Sonu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665348124844</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="05.10.2022 RestAssured Gün Sonu">
+      <created>1665354789499</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665354789499</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +203,7 @@
     <MESSAGE value="04.10.2022 Restassured - GoRest Create-Update-getUserByID" />
     <MESSAGE value="04.10.2022 Restassured - GoRest Delete-DeleteNegative" />
     <MESSAGE value="04.10.2022 Restassured Gün Sonu" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.10.2022 Restassured Gün Sonu" />
+    <MESSAGE value="05.10.2022 RestAssured Gün Sonu" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.10.2022 RestAssured Gün Sonu" />
   </component>
 </project>

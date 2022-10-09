@@ -136,6 +136,21 @@ public class CountryTest {
                 .statusCode(200)
         ;
     }
+
+    @Test(dependsOnMethods = "updateCountryNegative")
+    public void deleteCountryByIDNegative() {
+
+        given()
+                .cookies(cookies)
+                .pathParam("countryID",countryID)
+                .when()
+                .delete("school-service/api/countries/{countryID}")
+
+                .then()
+                .log().body()
+                .statusCode(400)
+        ;
+    }
     @Test(dependsOnMethods = "deleteCountryByID")
     public void updateCountryNegative() {
 
@@ -157,22 +172,7 @@ public class CountryTest {
                 .then()
                 .log().body()
                 .statusCode(400)
-                .body("message",equalTo("Country not found."))
-        ;
-    }
-
-    @Test(dependsOnMethods = "updateCountryNegative")
-    public void deleteCountryByIDNegative() {
-
-        given()
-                .cookies(cookies)
-                .pathParam("countryID",countryID)
-                .when()
-                .delete("school-service/api/countries/{countryID}")
-
-                .then()
-                .log().body()
-                .statusCode(400)
+                .body("message",equalTo("Country not found"))
         ;
     }
 }
