@@ -77,7 +77,6 @@ public class GoRestUsersTests {
                 .statusCode(200)
                 .body("name", equalTo("halil fındık"))
         ;
-        System.out.println("userID = " + userID);
     }
 
     @Test(dependsOnMethods = "createUserObject", priority = 2)
@@ -97,7 +96,42 @@ public class GoRestUsersTests {
                 .statusCode(200)
                 .body("id", equalTo(userID))
         ;
-        System.out.println("userID = " + userID);
+    }
+
+    @Test(dependsOnMethods = "createUserObject", priority = 3)
+    public void deleteUserByID() {
+
+        given()
+                .header("Authorization","Bearer 0f1c97269e7247ab490749691952b1a13841da6275be02e5e1980549d64c30db")
+                .contentType(ContentType.JSON)
+                .log().body()
+                .pathParam("userID", userID)
+
+                .when()
+                .delete("users/{userID}")
+
+                .then()
+                .log().body()
+                .statusCode(204)
+        ;
+    }
+
+    @Test(dependsOnMethods = "deleteUserByID")
+    public void deleteUserByIDNegative() {
+
+        given()
+                .header("Authorization","Bearer 0f1c97269e7247ab490749691952b1a13841da6275be02e5e1980549d64c30db")
+                .contentType(ContentType.JSON)
+                .log().body()
+                .pathParam("userID", userID)
+
+                .when()
+                .delete("users/{userID}")
+
+                .then()
+                .log().body()
+                .statusCode(404)
+        ;
     }
 
     public String getRandomEmail() {
@@ -114,7 +148,7 @@ public class GoRestUsersTests {
     @Test(enabled = false)
     public void createUser() {
 
-        userID =
+        int userID =
                 given()
                         // api methoduna gitmeden önceki hazırlıklar: token, gidecek body, parametreler
 

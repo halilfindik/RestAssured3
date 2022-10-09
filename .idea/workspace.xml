@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı">
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="04.10.2022 Restassured - GoRest Create-Update-getUserByID">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +75,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoRestUsersTests.deleteUserByID" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="METHOD_NAME" value="deleteUserByID" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoRestUsersTests.deleteUserByIDNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="METHOD_NAME" value="deleteUserByIDNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GoRestUsersTests.updateUserObject" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
@@ -94,37 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tasks.task4" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tasks" />
-      <option name="METHOD_NAME" value="task4" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZippoTest.requestResponseSpecification" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ZippoTest" />
-      <option name="METHOD_NAME" value="requestResponseSpecification" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.GoRestUsersTests" />
+        <item itemvalue="TestNG.GoRestUsersTests.deleteUserByIDNegative" />
+        <item itemvalue="TestNG.GoRestUsersTests.deleteUserByID" />
         <item itemvalue="TestNG.GoRestUsersTests.updateUserObject" />
         <item itemvalue="TestNG.GoRestUsersTests.createUserObject" />
-        <item itemvalue="TestNG.ZippoTest.requestResponseSpecification" />
-        <item itemvalue="TestNG.Tasks.task4" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664998795698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="04.10.2022 Restassured - GoRest Create-Update-getUserByID">
+      <created>1665328683912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665328683912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı" />
-    <option name="LAST_COMMIT_MESSAGE" value="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı" />
+    <MESSAGE value="04.10.2022 Restassured - GoRest Create-Update-getUserByID" />
+    <option name="LAST_COMMIT_MESSAGE" value="04.10.2022 Restassured - GoRest Create-Update-getUserByID" />
   </component>
 </project>
