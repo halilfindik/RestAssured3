@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POJO/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POJO/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POJO/ToDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ZippoTest.java" afterDir="false" />
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +40,35 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.ZippoTest.requestResponseSpecification">
-    <configuration name="Tasks.task1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GoRestUsersTests">
+    <configuration name="GoRestUsersTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tasks" />
-      <option name="METHOD_NAME" value="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoRestUsersTests.createUserObject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="METHOD_NAME" value="createUserObject" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -62,23 +76,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tasks.task2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTests.updateUserObject" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tasks" />
-      <option name="METHOD_NAME" value="task2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tasks.task3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tasks" />
-      <option name="METHOD_NAME" value="task3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="METHOD_NAME" value="updateUserObject" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoRestUsersTests" />
+        <item itemvalue="TestNG.GoRestUsersTests.updateUserObject" />
+        <item itemvalue="TestNG.GoRestUsersTests.createUserObject" />
         <item itemvalue="TestNG.ZippoTest.requestResponseSpecification" />
         <item itemvalue="TestNG.Tasks.task4" />
-        <item itemvalue="TestNG.Tasks.task3" />
-        <item itemvalue="TestNG.Tasks.task2" />
-        <item itemvalue="TestNG.Tasks.task1" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +137,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664388263475</updated>
     </task>
+    <task id="LOCAL-00001" summary="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı">
+      <created>1664998795698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664998795698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,5 +157,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı" />
+    <option name="LAST_COMMIT_MESSAGE" value="29.09.2022 Ders Sonu&#10;Request / Response Specification&#10;Extract Başlangıcı" />
   </component>
 </project>
