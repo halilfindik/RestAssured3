@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="05.10.2022 RestAssured Gün Sonu-2">
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="10.10.2022 RestAssured - Jenkis Başlangıç">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665355950979</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="10.10.2022 RestAssured - Jenkis Başlangıç">
+      <created>1665423748295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665423748295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +210,7 @@
     <MESSAGE value="04.10.2022 Restassured Gün Sonu" />
     <MESSAGE value="05.10.2022 RestAssured Gün Sonu" />
     <MESSAGE value="05.10.2022 RestAssured Gün Sonu-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="05.10.2022 RestAssured Gün Sonu-2" />
+    <MESSAGE value="10.10.2022 RestAssured - Jenkis Başlangıç" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.10.2022 RestAssured - Jenkis Başlangıç" />
   </component>
 </project>
