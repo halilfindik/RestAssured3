@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="05.10.2022 RestAssured Gün Sonu">
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="05.10.2022 RestAssured Gün Sonu-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,17 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CountryTest">
+  <component name="RunManager" selected="TestNG.C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml">
+    <configuration name="C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured3" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CountryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
@@ -52,24 +61,6 @@
       <option name="PACKAGE_NAME" value="Campus" />
       <option name="MAIN_CLASS_NAME" value="Campus.CountryTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountryTest.createCountryNegative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Campus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Campus" />
-      <option name="MAIN_CLASS_NAME" value="Campus.CountryTest" />
-      <option name="METHOD_NAME" value="createCountryNegative" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml" />
         <item itemvalue="TestNG.CountryTest" />
         <item itemvalue="TestNG.CountryTest.updateCountryNegative" />
         <item itemvalue="TestNG.CountryTest.deleteCountryByID" />
         <item itemvalue="TestNG.CountryTest.updateCountry" />
-        <item itemvalue="TestNG.CountryTest.createCountryNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665354789499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="05.10.2022 RestAssured Gün Sonu-2">
+      <created>1665355950979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665355950979</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +202,7 @@
     <MESSAGE value="04.10.2022 Restassured - GoRest Delete-DeleteNegative" />
     <MESSAGE value="04.10.2022 Restassured Gün Sonu" />
     <MESSAGE value="05.10.2022 RestAssured Gün Sonu" />
-    <option name="LAST_COMMIT_MESSAGE" value="05.10.2022 RestAssured Gün Sonu" />
+    <MESSAGE value="05.10.2022 RestAssured Gün Sonu-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.10.2022 RestAssured Gün Sonu-2" />
   </component>
 </project>
