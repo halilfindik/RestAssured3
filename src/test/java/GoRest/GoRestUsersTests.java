@@ -9,6 +9,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -151,9 +152,24 @@ public class GoRestUsersTests {
                 .statusCode(200)
                 .extract().response()
         ;
+        // TODO : İSMET HOCA'NIN YAPTIĞI YÖNTEM
+        int idUser3Path = response.path("[2].id"); // bu direk path şeklinde alma şekli
+        int idUser3JsonPath = response.jsonPath().getInt("[2].id"); // bu da jsonpath şeklinde alma şekli
+        System.out.println("idUser3Path = " + idUser3Path);
+        System.out.println("idUser3JsonPath = " + idUser3JsonPath);
+
+
 
         // TODO : 3.user'ın ID'sini alınız/extract ediniz (path ve jsonPath ile ayrı ayrı yapınız.)
+        
         // TODO : Tüm gelen veriyi bir nesneye atınız (google araştırması)
+        User[] usersPath=response.as(User[].class); // bu path kullanarak
+        System.out.println("Arrays.toString(usersPath) = " + Arrays.toString(usersPath));
+
+        List<User> usersJsonPath=response.jsonPath().getList("",User.class); // bu da jsonPath kullanarak
+        System.out.println("usersJsonPath = " + usersJsonPath);
+
+
         // TODO : GetUserByID testinde dönen user'ı bir nesneye atınız.
     }
     // TODO'LARIN ÇÖZÜMLERİ
@@ -206,6 +222,39 @@ public class GoRestUsersTests {
                 .extract().as(User.class)
         ;
         System.out.println("user = " + user);
+    }
+
+    @Test
+    public void getUsersV1() {
+
+        Response response =
+                given()
+                        .header("Authorization","Bearer 0f1c97269e7247ab490749691952b1a13841da6275be02e5e1980549d64c30db")
+
+                        .when()
+                        .get("https://gorest.co.in/public/v1/users")
+
+                        .then()
+                        //.log().body()
+                        .statusCode(200)
+                        .extract().response()
+                ;
+        // response.as(); tüm gelen response'a uygun nesnelerin yapılması gerekiyor. tamamını atman gerekiyor yani nesne içine
+        // eğer sadece gelen verinin içindeki örneğin data kısmını almak istersem bunu response.as() ile yapamıyorum
+
+        List<User> dataUsers = response.jsonPath().getList("data",User.class); // bu şekilde yaptığın zaman, response içindeki
+        // sadece data içinde gelen veriyi nesneye atayabiliyorsun. (jsonPath ile yani)
+
+        System.out.println("dataUsers = " + dataUsers);
+
+        // Daha önceki örneklerde (as) Clas dönüşümleri için tüm yapıya karşılık gelen
+        // gereken tüm classları yazarak dönüştürüp istediğimiz elemanlara ulaşıyorduk.
+        // Burada ise(JsonPath) aradaki bir veriyi clasa dönüştürerek bir list olarak almamıza
+        // imkan veren JSONPATH i kullandık.Böylece tek class ise veri alınmış oldu
+        // diğer class lara gerek kalmadan
+
+        // path : class veya tip dönüşümüne imkan veremeyen direk veriyi verir. List<String> gibi
+        // jsonPath : class dönüşümüne ve tip dönüşümüne izin vererek , veriyi istediğimiz formatta verir.
     }
 
     public String getRandomEmail() {

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="10.10.2022 RestAssured - Jenkis Başlangıç">
+    <list default="true" id="e8aa473a-a15d-4ca5-8445-33ede9208a72" name="Changes" comment="10.10.2022 RestAssured - Jenkis Hata Senaryosu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Campus/CountryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoRest/GoRestUsersTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml">
+  <component name="RunManager" selected="TestNG.CountryTest">
     <configuration name="C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -67,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryTest.deleteCountryByID" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CountryTest.createCountry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -77,7 +78,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Campus" />
       <option name="MAIN_CLASS_NAME" value="Campus.CountryTest" />
-      <option name="METHOD_NAME" value="deleteCountryByID" />
+      <option name="METHOD_NAME" value="createCountry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -85,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryTest.updateCountry" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CountryTest.loginCampus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Campus" />
       <option name="MAIN_CLASS_NAME" value="Campus.CountryTest" />
-      <option name="METHOD_NAME" value="updateCountry" />
+      <option name="METHOD_NAME" value="loginCampus" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,17 +104,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryTest.updateCountryNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTests.getThirdUserByJsonPath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Campus.*" />
+          <option name="PATTERN" value="GoRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Campus" />
-      <option name="MAIN_CLASS_NAME" value="Campus.CountryTest" />
-      <option name="METHOD_NAME" value="updateCountryNegative" />
+      <option name="PACKAGE_NAME" value="GoRest" />
+      <option name="MAIN_CLASS_NAME" value="GoRest.GoRestUsersTests" />
+      <option name="METHOD_NAME" value="getThirdUserByJsonPath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml" />
         <item itemvalue="TestNG.CountryTest" />
-        <item itemvalue="TestNG.CountryTest.updateCountryNegative" />
-        <item itemvalue="TestNG.CountryTest.deleteCountryByID" />
-        <item itemvalue="TestNG.CountryTest.updateCountry" />
+        <item itemvalue="TestNG.C:/Users/halfi/IdeaProjects/RestAssured3/testng.xml" />
+        <item itemvalue="TestNG.CountryTest.loginCampus" />
+        <item itemvalue="TestNG.CountryTest.createCountry" />
+        <item itemvalue="TestNG.GoRestUsersTests.getThirdUserByJsonPath" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665423748295</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="10.10.2022 RestAssured - Jenkis Hata Senaryosu">
+      <created>1665426988606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665426988606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +219,7 @@
     <MESSAGE value="05.10.2022 RestAssured Gün Sonu" />
     <MESSAGE value="05.10.2022 RestAssured Gün Sonu-2" />
     <MESSAGE value="10.10.2022 RestAssured - Jenkis Başlangıç" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.10.2022 RestAssured - Jenkis Başlangıç" />
+    <MESSAGE value="10.10.2022 RestAssured - Jenkis Hata Senaryosu" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.10.2022 RestAssured - Jenkis Hata Senaryosu" />
   </component>
 </project>
